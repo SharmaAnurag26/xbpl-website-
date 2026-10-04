@@ -64,7 +64,7 @@ export default async function ArticlePage({ params }: PageProps<"/insights/[slug
       />
 
       <article>
-        <header className="surface-dark relative isolate overflow-hidden bg-hero">
+        <header className="surface-dark relative isolate overflow-hidden border-b border-line bg-canvas">
           <div aria-hidden className="absolute inset-0 -z-10 bg-grid-dark opacity-60" />
           <div className="container-site max-w-4xl pt-10 pb-28 sm:pt-14 sm:pb-36">
             <nav aria-label="Breadcrumb">
@@ -117,7 +117,7 @@ export default async function ArticlePage({ params }: PageProps<"/insights/[slug
               sizes="(min-width: 960px) 896px, 100vw"
             />
           </div>
-          <div className="mx-auto prose prose-lg max-w-[68ch] py-12 text-ink prose-slate lg:py-16 prose-headings:font-display prose-headings:text-ink prose-h2:mt-10 prose-h2:text-2xl prose-a:font-medium prose-a:text-brand-text prose-a:underline-offset-2 hover:prose-a:text-brand-deep prose-strong:text-ink prose-li:marker:text-brand">
+          <div className="mx-auto prose prose-lg max-w-[68ch] py-12 text-ink prose-invert lg:py-16 prose-headings:font-display prose-headings:text-ink prose-h2:mt-10 prose-h2:text-2xl prose-a:font-medium prose-a:text-brand-text prose-a:underline-offset-2 hover:prose-a:text-brand-deep prose-strong:text-ink prose-li:marker:text-brand">
             <Body />
           </div>
         </div>
@@ -126,7 +126,7 @@ export default async function ArticlePage({ params }: PageProps<"/insights/[slug
       <CTABand id="article-cta" title={copy.ctaTitle} body={copy.ctaBody} cta={copy.cta} />
 
       {related.length > 0 ? (
-        <section aria-labelledby="related-title" className="bg-white pt-10 pb-16 lg:pb-24">
+        <section aria-labelledby="related-title" className="bg-canvas pt-10 pb-16 lg:pb-24">
           <div className="container-site">
             <h2 id="related-title" className="font-display text-2xl font-bold text-ink">
               {copy.relatedTitle}

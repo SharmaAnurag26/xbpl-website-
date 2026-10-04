@@ -78,13 +78,16 @@ export function organizationLd(): JsonLd {
     slogan: site.tagline,
     description: site.description,
     email: site.contact.email,
+    telephone: site.contact.phone.href.replace("tel:", ""),
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Bengaluru",
-      addressRegion: "Karnataka",
+      streetAddress: "C-72, Nilgiri-1, Sector-34",
+      addressLocality: "Noida",
+      addressRegion: "Uttar Pradesh",
+      postalCode: "201301",
       addressCountry: "IN",
     },
-    sameAs: [site.social.linkedin],
+    sameAs: site.social.map((s) => s.href),
   };
 }
 

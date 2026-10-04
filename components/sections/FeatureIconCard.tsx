@@ -24,7 +24,7 @@ export function FeatureIconCard({
           ? "flex-col items-center gap-3 text-center"
           : "items-center gap-4 text-left",
         bordered &&
-          "rounded-card border border-line bg-white px-3 py-6 shadow-card transition-[transform,box-shadow] duration-300 ease-out-soft hover:-translate-y-1 hover:shadow-card-hover",
+          "rounded-card border border-line bg-surface px-3 py-6 shadow-card transition-[transform,box-shadow] duration-300 ease-out-soft hover:-translate-y-1 hover:shadow-card-hover",
       )}
     >
       <IconTile

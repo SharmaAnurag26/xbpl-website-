@@ -5,50 +5,79 @@
    Design tokens. Contrast-checked pairs live in scripts/check-contrast.ts.
    ========================================================================== */
 @theme {
+  /* ---- Dark editorial theme (inspired by enterprise-consultancy sites) ----
+     Semantic names stay the same so components read naturally:
+     canvas/surface = backgrounds, ink = primary text, muted = secondary text. */
+
+  /* Surfaces */
+  --color-canvas: #000000;
+  --color-surface: #0e0f13; /* cards, raised sections */
+  --color-surface-2: #17191f; /* hover / inputs */
+
   /* Brand */
   --color-navy: #06162e;
   --color-navy-2: #0a2448;
   --color-navy-3: #0a2c59;
-  --color-brand: #0879f9; /* icons, large display text, decoration */
-  --color-brand-text: #0663d4; /* AA-safe blue for links and small text on light */
-  --color-brand-deep: #0556bb;
+  --color-brand: #0879f9; /* solid brand fills, icons, large display text */
+  --color-brand-text: #6cb4ff; /* AA-safe blue for links and small text on black */
+  --color-brand-deep-fill: #0663d4; /* solid tiles that carry white text (5.6:1) */
+  --color-brand-deep: #9ccbff;
   --color-cyan: #08cfe3;
   --color-cyan-soft: #5ee3f0;
+  --color-volt: #d4ff3a; /* Gen Z accent: chips, highlights, stickers (black text only) */
 
-  /* Neutrals */
-  --color-ink: #07182f;
-  --color-muted: #56667e; /* refined from #65758d so it passes AA on soft too */
-  --color-line: #e4eaf2;
-  --color-soft: #f5f8fc;
-  --color-tile: #eaf2fe; /* icon tile background */
+  /* Neutrals (on black) */
+  --color-ink: #ffffff;
+  --color-muted: #a7adb8;
+  --color-line: #26282f;
+  --color-soft: #0b0c10;
+  --color-tile: rgb(255 255 255 / 0.06);
   --color-on-dark: #ffffff;
-  --color-on-dark-muted: #b4c3d9;
+  --color-on-dark-muted: #a7adb8;
   --color-line-dark: rgb(255 255 255 / 0.12);
 
   /* Feedback */
-  --color-error: #c62828;
-  --color-success: #13795b;
+  --color-error: #ff7b7b;
+  --color-success: #4ade9b;
 
-  /* Type */
+  /* Type: one neutral grotesk, medium weight for display, as editorial sites do. */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --text-eyebrow: 0.75rem;
-  --text-eyebrow--letter-spacing: 0.16em;
+  --text-eyebrow--letter-spacing: 0.14em;
   --text-eyebrow--line-height: 1.4;
 
   /* Shape */
-  --radius-card: 1rem;
+  --radius-card: 1.25rem;
   --radius-tile: 0.75rem;
-  --radius-band: 1.25rem;
+  --radius-band: 1.75rem;
 
-  --shadow-card: 0 1px 2px rgb(7 24 47 / 0.04), 0 10px 30px -16px rgb(7 24 47 / 0.18);
-  --shadow-card-hover: 0 2px 4px rgb(7 24 47 / 0.05), 0 22px 44px -18px rgb(6 99 212 / 0.32);
+  --shadow-card: none;
+  --shadow-card-hover: 0 24px 48px -24px rgb(8 121 249 / 0.45);
   --shadow-glow: 0 10px 30px -10px rgb(8 207 227 / 0.55);
 
   /* Motion */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
   --animate-glow-drift: glow-drift 14s ease-in-out infinite alternate;
+  --animate-marquee: marquee 45s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-spin-slow: spin 22s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate3d(0, -14px, 0) rotate(1.5deg);
+    }
+  }
   --animate-sheen: sheen 7s ease-in-out infinite;
 
   @keyframes glow-drift {
@@ -79,7 +108,7 @@
   --gradient-hero: linear-gradient(115deg, #06162e 0%, #0a2c59 55%, #0a6ec7 100%);
   --gradient-text: linear-gradient(92deg, #0879f9 0%, #08cfe3 100%);
   --gradient-text-on-light: linear-gradient(92deg, #0663d4 0%, #0874b0 100%);
-  --focus-ring: var(--color-brand-text);
+  --focus-ring: var(--color-cyan-soft);
 }
 
 /* ==========================================================================
@@ -92,8 +121,12 @@
     text-rendering: optimizeLegibility;
   }
 
+  html {
+    color-scheme: dark;
+  }
+
   body {
-    background: #ffffff;
+    background: var(--color-canvas);
     color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -105,7 +138,7 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.015em;
+    letter-spacing: -0.025em;
     text-wrap: balance;
   }
 
@@ -126,7 +159,7 @@
   }
 
   ::selection {
-    background: rgb(8 121 249 / 0.2);
+    background: rgb(8 121 249 / 0.45);
   }
 }
 
@@ -161,11 +194,6 @@
   color: transparent;
 }
 
-@utility bg-hero {
-  background-color: var(--color-navy);
-  background-image: var(--gradient-hero);
-}
-
 /* Faint technical grid used on dark surfaces. */
 @utility bg-grid-dark {
   background-image:
@@ -180,6 +208,12 @@
   background-image: radial-gradient(rgb(94 227 240 / 0.22) 1px, transparent 1.2px);
   background-size: 22px 22px;
   mask-image: radial-gradient(ellipse 60% 60% at 75% 50%, #000 20%, transparent 70%);
+}
+
+/* Film grain for hero/feature surfaces (static SVG noise, no JS). */
+@utility bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
 }
 
 @utility section-y {
@@ -212,6 +246,12 @@
     transform: translateX(100%);
   }
 }
+@keyframes mega-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -223,8 +263,8 @@
    Browsers without support simply keep the hairline border. */
 @keyframes header-elevate {
   to {
-    box-shadow: 0 8px 24px -16px rgb(7 24 47 / 0.35);
-    border-color: transparent;
+    background-color: rgb(0 0 0 / 0.92);
+    border-color: var(--color-line);
   }
 }
 @supports (animation-timeline: scroll()) {

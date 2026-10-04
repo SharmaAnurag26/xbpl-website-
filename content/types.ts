@@ -73,12 +73,67 @@ export type CTABandContent = {
 
 export type ProcessStep = { icon: IconName; label: string };
 
+/** 3D render names available in public/3d (kept in sync with components/genz/Sticker3D). */
+export type StickerName =
+  "x-mark" | "knot" | "blob" | "glass-cube" | "rings" | "shield" | "cloud" | "capsules";
+
+export type BentoItem = {
+  title: string;
+  description: string;
+  icon: IconName;
+  tone: "surface" | "brand" | "volt" | "cyan";
+  sticker?: StickerName;
+  tag?: string;
+};
+
+export type BentoSection = SectionHeadingContent & { items: BentoItem[]; cta?: Cta };
+
+export type Course = {
+  slug: string;
+  title: string;
+  category: string;
+  icon: IconName;
+  image: ImageSlotKey;
+  summary: string;
+};
+
+/** One audience card: organizations vs individual learners. */
+export type Audience = {
+  label: string;
+  title: string;
+  description: string;
+  points: string[];
+  image: ImageRef;
+  cta: Cta;
+};
+
+export type FaqItem = { question: string; answer: string };
+export type FaqSection = { title: string; items: FaqItem[] };
+
+/** Real quotes only. The section stays hidden while the list is empty. */
+export type Testimonial = { quote: string; name: string; role: string; company: string };
+export type TestimonialSection = { title: string; items: Testimonial[] };
+
+/** Real client logos only (with permission). Hidden while empty. */
+export type ClientLogo = { name: string; src: string; width: number; height: number };
+export type LogoSection = { title: string; logos: ClientLogo[] };
+
 export type HomePageContent = {
   seo: Seo;
   hero: HomeHeroContent;
   stats: { label: string; items: Stat[] };
   priorities: SectionHeadingContent & { cards: ServiceCardContent[] };
-  connected: { title: string; image: ImageRef; pillars: FeatureItem[] };
+  /** Solid tile that completes the featured grid's first row. */
+  featuredCta: { eyebrow: string; title: string; href: string; linkLabel: string };
+  /** Labels for the latest-insights row of the featured grid. */
+  latestInsights: { eyebrow: string; linkLabel: string };
+  connected: { title: string; subtitle: string; image: ImageRef; pillars: FeatureItem[] };
+  tickerLabel: string;
+  audiences: SectionHeadingContent & { items: Audience[] };
+  popularCourses: SectionHeadingContent & { cta: Cta };
+  formats: BentoSection;
+  clients: LogoSection;
+  testimonials: TestimonialSection;
   whyChoose: SectionHeadingContent & { items: FeatureItem[] };
   cta: CTABandContent;
 };
@@ -106,27 +161,66 @@ export type ArticleMeta = {
 
 type FeatureSection = SectionHeadingContent & { items: FeatureItem[] };
 
+/** Rich card: title, optional description and bullet points (services, reasons, values). */
+export type DetailItem = {
+  title: string;
+  description?: string;
+  bullets?: string[];
+  icon?: IconName;
+};
+export type DetailSection = SectionHeadingContent & { items: DetailItem[] };
+
+/** Numbered process step with optional sub-points. */
+export type StepItem = { title: string; bullets?: string[] };
+export type StepsSection = SectionHeadingContent & { steps: StepItem[] };
+
 export type LearningPageContent = {
   seo: Seo;
   hero: PageHeroContent;
-  approach: FeatureSection;
+  intro: SectionHeadingContent & { paragraphs: string[]; challenges: DetailItem[] };
+  approach: BentoSection;
+  courses: SectionHeadingContent & { items: Course[]; formats: string[] };
   areas: FeatureSection;
+  whyChoose: DetailSection;
+  engagement: StepsSection;
   process: CTABandContent & { stepsLabel: string; steps: ProcessStep[] };
+  faq: FaqSection;
 };
 
 export type CloudPageContent = {
   seo: Seo;
   hero: PageHeroContent;
-  capabilities: FeatureSection;
+  intro: SectionHeadingContent & { paragraphs: string[] };
+  platforms: FeatureSection;
+  services: DetailSection;
+  framework: StepsSection & { outcomes: string[]; closing: string };
+  partner: SectionHeadingContent & { points: string[] };
   technologies: SectionHeadingContent & { logos: TechLogo[] };
+  engagement: StepsSection;
   cta: CTABandContent;
 };
 
 export type SecurityPageContent = {
   seo: Seo;
   hero: PageHeroContent;
-  capabilities: FeatureSection;
-  whyMatters: FeatureSection;
+  intro: SectionHeadingContent & { paragraphs: string[] };
+  services: DetailSection;
+  whyMatters: DetailSection;
+  cta: CTABandContent;
+};
+
+export type CoursesPageContent = {
+  seo: Seo;
+  hero: PageHeroContent;
+  catalogue: SectionHeadingContent & { filterLabel: string; enquireLabel: string };
+  cta: CTABandContent;
+};
+
+export type ManagedServicesPageContent = {
+  seo: Seo;
+  hero: PageHeroContent;
+  intro: SectionHeadingContent & { paragraphs: string[] };
+  features: DetailSection;
   cta: CTABandContent;
 };
 
@@ -134,6 +228,8 @@ export type AboutPageContent = {
   seo: Seo;
   hero: PageHeroContent;
   story: SectionHeadingContent & { paragraphs: string[]; pillars: ServiceCardContent[] };
+  missionVision: { title: string; body: string }[];
+  values: DetailSection;
   purpose: FeatureSection;
   band: CTABandContent;
 };
@@ -189,12 +285,20 @@ export type LegalPageContent = {
 
 export type FooterGroup = { title: string; links: Link[] };
 
+export type MegaLink = Link & { description?: string };
+
+/** Top-level navigation item. Items with `menu` open a full-width dropdown panel. */
+export type NavItem = Link & {
+  menu?: { title: string; body: string; cta: Link; links: MegaLink[] };
+};
+
 export type SiteContent = {
   name: string;
   legalName: string;
   tagline: string;
   description: string;
-  nav: Link[];
+  nav: NavItem[];
+  search: { label: string; placeholder: string; empty: string; hint: string };
   headerCta: Link;
   footer: {
     blurb: string;
@@ -207,5 +311,5 @@ export type SiteContent = {
     phone: { display: string; href: string };
     email: string;
   };
-  social: { linkedin: string };
+  social: { label: string; href: string; network: "linkedin" | "x" | "instagram" | "facebook" }[];
 };

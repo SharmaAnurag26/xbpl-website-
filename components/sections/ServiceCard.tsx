@@ -15,7 +15,7 @@ export function ServiceCard({
   headingLevel?: "h2" | "h3";
 }) {
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-white shadow-card transition-[transform,box-shadow] duration-300 ease-out-soft hover:-translate-y-1 hover:shadow-card-hover has-[a:focus-visible]:shadow-card-hover">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-surface shadow-card transition-[transform,box-shadow] duration-300 ease-out-soft hover:-translate-y-1 hover:shadow-card-hover has-[a:focus-visible]:shadow-card-hover">
       <ImageSlot
         slot={card.image.slot}
         alt={card.image.alt}

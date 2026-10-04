@@ -26,7 +26,7 @@ for (let lat = MAP.latTop - MAP.step / 2; lat > MAP.latBottom; lat -= MAP.step) 
   }
 }
 
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${MAP.width} ${MAP_HEIGHT}" width="${MAP.width}" height="${MAP_HEIGHT}"><path d="${segments.join("")}" stroke="#b9c6d8" stroke-width="5.2" stroke-linecap="round" fill="none"/></svg>\n`;
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${MAP.width} ${MAP_HEIGHT}" width="${MAP.width}" height="${MAP_HEIGHT}"><path d="${segments.join("")}" stroke="#3a4a63" stroke-width="5.2" stroke-linecap="round" fill="none"/></svg>\n`;
 
 async function main() {
   const out = path.join(process.cwd(), "public", "images", "world-dots.svg");

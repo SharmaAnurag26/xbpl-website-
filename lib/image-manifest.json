@@ -1,1 +1,182 @@
-{}
+{
+  "home/hero": {
+    "src": "/images/home/hero.webp",
+    "width": 2400,
+    "height": 1350,
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQAAkAA4BaJZgCdAEO/t8IFAAA/vd5lymU6PZMS2q1oWmuQbhJ0bQTnXiVAAAA"
+  },
+  "home/build": {
+    "src": "/images/home/build.webp",
+    "width": 800,
+    "height": 500,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoAA4BaJbACdAEfvuL+7uAwAP7j12qgylNDcpNrKyO939B3WKBqKNh4lD4+Kmq3CMIevLbHNXk8+S64iS7DRvoFUFcrdhqQAA=="
+  },
+  "home/evolve": {
+    "src": "/images/home/evolve.webp",
+    "width": 800,
+    "height": 500,
+    "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAA4BaJZwAAufe/8RWOtaAAP7s7XYkmu8CFxmPIENVvmynrafEn+s5iUUpsKJZpPRAPfJKvN/RZeQ5LTMuEiZoGVAaNmz17KKCysII99QgVrxQAA=="
+  },
+  "home/lead": {
+    "src": "/images/home/lead.webp",
+    "width": 800,
+    "height": 500,
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAoAA4BaJZQCdAD1estOfz9zyAD+7vIK3tmA+Aa8BUqbrIbLaG6WKsAVat9UCE3U0gzZ0Cj/pUhJSgvS239GAMQseZKJVNSr2Ne+AcQAAA=="
+  },
+  "home/band": {
+    "src": "/images/home/band.webp",
+    "width": 1600,
+    "height": 700,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQAAcAA4BaJZgCdAEPSrSj0ARAAP73gM0ajkLYaof9geEvjapZMEaoiiPnj3rCBkAAAA=="
+  },
+  "home/cta": {
+    "src": "/images/home/cta.webp",
+    "width": 1600,
+    "height": 700,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAcAA4BaJQBOgCB/2fsY6AD+9EoR/qUmm9ozUaQCunmhDKuhXTebWZ1uyd7TG1yAAA=="
+  },
+  "learning/hero": {
+    "src": "/images/learning/hero.webp",
+    "width": 1600,
+    "height": 1100,
+    "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoQAAsAA4BaJbACdBHAH98svyl4R3K3AAD+8RivLjlbAKiP4YaP1i2R2VIFsQ054wz31OMlcHgfIoYV3ULGOR599lWK6ag9O2TtzYCRYD81nA9Si9erqqf0ikV9nxopnCnUlnjE7paJuL9gAAA="
+  },
+  "cloud/hero": {
+    "src": "/images/cloud/hero.webp",
+    "width": 1600,
+    "height": 1100,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsAA4BaJbACdADp8P9zemAAAP7usoHkQdsTTCiC2UZcqAJWf4qxYwEt0vJyxIovwbh3hYUrUH1rf3GrrFwXjIIrUmNQIiMAAA=="
+  },
+  "cloud/cta": {
+    "src": "/images/cloud/cta.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAsAA4BaJYwAAujbgveB4AD+9YnuRxMLv4VpVR1fyVSZDYAqs8Y7BPA5P5Zg4AA="
+  },
+  "security/hero": {
+    "src": "/images/security/hero.webp",
+    "width": 1600,
+    "height": 1100,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAsAA4BaJZQC7AEN5YaJP+4AAP70nV9R4i1FWInES5iix2dIDC8+sMVBuC0vYg6Fk/iweWEW7pIQnDVRGRj/zzxLkAAA"
+  },
+  "security/cta": {
+    "src": "/images/security/cta.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsAA4BaJYwCdAEPPOBobe8AAP7vjVftO9oIY8Y5LmAEy8bu3z5BX965BLzE02XTAxW8/X2TFqMA+9Sd/veIGJfVXnl6OHkkgAAA"
+  },
+  "about/hero": {
+    "src": "/images/about/hero.webp",
+    "width": 1600,
+    "height": 1100,
+    "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoQAAsAA4BaJaQAAuddSftgAP75yHuLFLpl9gL8Y0z33P6AAAA="
+  },
+  "about/band": {
+    "src": "/images/about/band.webp",
+    "width": 1600,
+    "height": 700,
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAcAA4BaJZQAAcDFP/NVAADiA6vXdoVQejkTVXJKBD+5+mJK+jp01+wxXi9f3RUCgTC+IAA="
+  },
+  "insights/hero": {
+    "src": "/images/insights/hero.webp",
+    "width": 1600,
+    "height": 1100,
+    "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsAA4BaJYwCdADND3qNSqAA/qZ01FklCVlN5B/YiJe2eUToAeduY5eCL5Ua7+r5hQLIFql1ERyFJ2+XuTkBl+vVAAAA"
+  },
+  "insights/from-experimentation-to-enterprise-value": {
+    "src": "/images/insights/from-experimentation-to-enterprise-value.webp",
+    "width": 1200,
+    "height": 675,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAkAA4BaJZQCdADwYGeaAAD930dl1kWXltxEJ+kJcYag3jWaA5i7gsLScC9lj1u7ayoA"
+  },
+  "insights/cloud-migration-key-considerations": {
+    "src": "/images/insights/cloud-migration-key-considerations.webp",
+    "width": 1200,
+    "height": 675,
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAkAA4BaJZwAApKDO7RAAP738WZoVIs1jKQvlkAm4yX54eZa5HQhvPelUPitUV0Bzfl/dQAH33i+OHGeAAAA"
+  },
+  "insights/evolving-threat-landscape": {
+    "src": "/images/insights/evolving-threat-landscape.webp",
+    "width": 1200,
+    "height": 675,
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAABQAQCdASoQAAkAA4BaJQBOgCgAAP7zQ/rSni6brSQEdnaHdVQXX8i8d6S6P6GSWDL2YrbJHjimgAAA"
+  },
+  "insights/building-a-future-ready-technology-workforce": {
+    "src": "/images/insights/building-a-future-ready-technology-workforce.webp",
+    "width": 1200,
+    "height": 675,
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkAA4BaJZQAD4tPslRxQloAAOJ+I6+K5gjjtyEwlgpu38YkehfmFI7ki+zxKUE/VXK58/Q7iIjemI63+zGOzf63zRO5wVVUO7TxbZK2AAAA"
+  },
+  "insights/cloud-and-security-in-digital-transformation": {
+    "src": "/images/insights/cloud-and-security-in-digital-transformation.webp",
+    "width": 1200,
+    "height": 675,
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQAAkAA4BaJaACdADw2UGBjlAA/ve+lk8T6nctXtQibGEgbkYfHnkbIaOj3Xec9ziAAA=="
+  },
+  "insights/technology-trends-to-watch": {
+    "src": "/images/insights/technology-trends-to-watch.webp",
+    "width": 1200,
+    "height": 675,
+    "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAkAA4BaJbACdH8AE710cNgAAP7lNCdnnEFAct94g9vJ17P7QOOiT8jNvpG/zTIcqCxCrOOuyctVAdSmYgCr62ZozRj+i93BQPNOeSAAAA=="
+  },
+  "learning/organizations": {
+    "src": "/images/learning/organizations.webp",
+    "width": 1600,
+    "height": 1067,
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAQCdASoQAAsAA4BaJZQAAlb9lXwAAP7nd1j9tzz7RqhzO6BMKPwtxjPoPAeolA2vIgpwJUl7XRpnP1Z+js10bS6c4Yz4s6vEMCUUl7seWpAeAAA="
+  },
+  "learning/learners": {
+    "src": "/images/learning/learners.webp",
+    "width": 1600,
+    "height": 1067,
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsAA4BaJbACdAEPhxxQf+EAAP7qfxP0Jaeli6bQHkJRc4JFht/gzjHr9JpVyjawRx8r9vQqls8of06MeF9xhNfH51bsOJBTvERB8fxSdDVHbzv536AA"
+  },
+  "learning/study": {
+    "src": "/images/learning/study.webp",
+    "width": 1600,
+    "height": 1067,
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAsAA4BaJQBOkDgC4vGJt5I0WAAA/mi4IBpeDUzVt0QyqTqPm0lcqT3a3MZ/5s72cs87WDfyrZiXJYFj1RMGXCKSR9JLj6IRjlwkyB+l70AA"
+  },
+  "courses/data-science-r": {
+    "src": "/images/courses/data-science-r.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAA4BaJZQCdAEPDw3OUR0AAP74GWeIVMjhGxRe9XU0A2Isi/be+LrJVYc4uUQIcTUWwUKmUl5fE9IAAA=="
+  },
+  "courses/data-science-python": {
+    "src": "/images/courses/data-science-python.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAsAA4BaJYwCdADw0uC4URAA/vTfE7JnEy/J7E9t43nsCSESppKQZg9ihLu13dNDtHys7lZTK/K65u2IAA=="
+  },
+  "courses/data-analytics-visualization": {
+    "src": "/images/courses/data-analytics-visualization.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoQAAsAA4BaJagCdDBAAX/w+U8egAD+9moWZHrYV3kMW8xdJJsh72hX9W2TNibfww+/KW8LK375Css4AmdtJthwjCljvqINPXYNzr10HuHJK6F2wuYRs1yQh1NWuMphz78Uh/q8Or8AAA=="
+  },
+  "courses/generative-ai": {
+    "src": "/images/courses/generative-ai.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAA4BaJZQAAubt/xNynUAA/vZoC02FzLuc7cZOv29y7iwVQiBf6xzo4pEPkViPJSDBwjzjOXTm7WrZIa91B+1lakh+kcoAAA=="
+  },
+  "courses/network-security": {
+    "src": "/images/courses/network-security.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAsAA4BaJYwAAueARLkH2AAA/vc+JNX0OMJ8XKhLaBdT8nlvudzU3whrE2UGwlwwv1tc6VBSiQsUPWnMkm4Mm8WYe/BcZJn5Nat4EIBmAAAA"
+  },
+  "courses/cyber-security": {
+    "src": "/images/courses/cyber-security.webp",
+    "width": 1200,
+    "height": 800,
+    "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwAgCdASoQAAsAA4BaJYgCdH8AgqCTh1L0wAD+7e76Holsgli94XdY8SRL7mJy7YD6U+4gCAw1PiB+a/ySfX2q+46osPMv/Q5jKG7jNDwnoAVsXtWS/zT2U2JT16ZR6fQU66DlrFyCKpv89VoVfQ3Yo+Hmp3ocAAA="
+  },
+  "contact/hero": {
+    "src": "/images/contact/hero.webp",
+    "width": 2400,
+    "height": 900,
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAYAA4BaJZgCsAED/vfZlPRgAP7qPm4e51bKVLlVyqrL9D2N46c8Y1hjtau+FFVpGw0lzwvfRNkrxpwcAA=="
+  }
+}

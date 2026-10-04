@@ -22,7 +22,7 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   const dark = tone === "dark";
   return (
-    <div className={cn(align === "center" && "mx-auto max-w-2xl text-center", className)}>
+    <div className={cn(align === "center" && "mx-auto max-w-3xl text-center", className)}>
       {eyebrow ? (
         <p
           className={cn(
@@ -36,7 +36,7 @@ export function SectionHeading({
       <Heading
         id={id}
         className={cn(
-          "text-[1.6rem] leading-tight font-bold sm:text-3xl lg:text-[2.1rem]",
+          "text-[2rem] leading-[1.05] font-medium tracking-[-0.03em] sm:text-[2.6rem] lg:text-[3.4rem]",
           dark ? "text-white" : "text-ink",
         )}
       >
@@ -49,7 +49,7 @@ export function SectionHeading({
       {intro ? (
         <p
           className={cn(
-            "mt-3 text-[0.95rem] leading-relaxed sm:text-base",
+            "mt-4 text-base leading-relaxed sm:text-lg",
             dark ? "text-on-dark-muted" : "text-muted",
             align === "center" && "mx-auto max-w-xl",
           )}

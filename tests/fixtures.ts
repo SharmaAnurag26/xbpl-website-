@@ -2,9 +2,11 @@ import { test as base, expect } from "@playwright/test";
 
 export const routes = [
   { path: "/", h1: /Build/i },
+  { path: "/courses", h1: /skills that move careers/i },
   { path: "/learning", h1: /Technology capability/i },
   { path: "/cloud", h1: /cloud environment/i },
   { path: "/security", h1: /Move forward securely/i },
+  { path: "/managed-services", h1: /Technology that meets reliability/i },
   { path: "/about", h1: /possibilities/i },
   { path: "/insights", h1: /smarter tomorrow/i },
   { path: "/insights/cloud-migration-key-considerations", h1: /Cloud Migration/i },

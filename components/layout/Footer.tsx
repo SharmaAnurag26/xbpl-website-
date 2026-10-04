@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 import type { ReactNode } from "react";
-import { LinkedInIcon } from "@/components/brand/LinkedInIcon";
+import { SocialLinks } from "@/components/brand/SocialLinks";
 import { Logo } from "@/components/brand/Logo";
 import { site } from "@/content/site";
 
@@ -12,11 +12,11 @@ export function Footer({ extra }: { extra?: ReactNode }) {
   const [quick, solutions] = site.footer.groups;
 
   return (
-    <footer className="border-t border-line bg-white">
+    <footer className="border-t border-line bg-canvas">
       <div className="container-site grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1.2fr_1fr_0.7fr] lg:gap-8 lg:py-14">
         <div>
           <NextLink href="/" className="inline-block rounded-md" aria-label="XBPL home">
-            <Logo id="footer-logo" title={null} className="h-12 w-auto" />
+            <Logo id="footer-logo" variant="on-dark" title={null} className="h-12 w-auto" />
           </NextLink>
           <p className="mt-5 max-w-xs text-sm text-muted">{site.description}</p>
         </div>
@@ -57,15 +57,7 @@ export function Footer({ extra }: { extra?: ReactNode }) {
 
         <div>
           <h2 className="text-sm font-semibold text-ink">Follow Us</h2>
-          <a
-            href={site.social.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex size-10 items-center justify-center rounded-lg bg-navy text-white transition-colors hover:bg-brand-text"
-          >
-            <LinkedInIcon className="size-[18px]" />
-            <span className="sr-only">XBPL on LinkedIn (opens in a new tab)</span>
-          </a>
+          <SocialLinks links={site.social} className="mt-4" />
         </div>
       </div>
 

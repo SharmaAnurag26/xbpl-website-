@@ -4,7 +4,7 @@ import { Logo } from "@/components/brand/Logo";
 import { ArticleCard } from "@/components/insights/ArticleCard";
 import { CategoryTabs } from "@/components/insights/CategoryTabs";
 import { Container, Section } from "@/components/layout/Container";
-import { CapabilityCard } from "@/components/sections/CapabilityCard";
+import { DetailGrid } from "@/components/sections/DetailGrid";
 import { CTABand } from "@/components/sections/CTABand";
 import { FeatureIconCard } from "@/components/sections/FeatureIconCard";
 import { HomeHero, PageHero } from "@/components/sections/Hero";
@@ -148,7 +148,16 @@ export default function StyleguidePage() {
             />
             <ArticleCard article={sampleArticle} categoryLabel="Cloud" />
             <div className="grid grid-cols-2 gap-4">
-              <CapabilityCard item={{ icon: "cloud-upload", title: "Cloud Migration" }} />
+              <DetailGrid
+                columns={2}
+                items={[
+                  {
+                    icon: "cloud-upload",
+                    title: "Cloud Migration",
+                    bullets: ["Planning", "Minimal downtime"],
+                  },
+                ]}
+              />
               <FeatureIconCard item={{ icon: "target", title: "Business-Aligned Solutions" }} />
             </div>
           </div>

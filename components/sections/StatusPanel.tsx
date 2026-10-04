@@ -13,7 +13,7 @@ export function StatusPanel({
   children: ReactNode;
 }) {
   return (
-    <section className="surface-dark relative isolate overflow-hidden bg-hero">
+    <section className="surface-dark relative isolate overflow-hidden border-b border-line bg-canvas">
       <div aria-hidden className="absolute inset-0 -z-10 bg-grid-dark opacity-60" />
       <div className="container-site flex min-h-[60svh] flex-col justify-center py-20">
         <p className="text-gradient font-display text-7xl font-extrabold sm:text-8xl" aria-hidden>

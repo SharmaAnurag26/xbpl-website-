@@ -3,7 +3,7 @@ import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 export const controlClass = cn(
-  "block w-full rounded-lg border border-line bg-white px-3.5 text-[0.95rem] text-ink shadow-[inset_0_1px_2px_rgb(7_24_47/0.04)]",
+  "block w-full rounded-lg border border-line bg-surface px-3.5 text-[0.95rem] text-ink shadow-[inset_0_1px_2px_rgb(7_24_47/0.04)]",
   "transition-[border-color,box-shadow] duration-200 placeholder:text-muted/80",
   "hover:border-ink/25 focus:border-brand-text focus:shadow-[0_0_0_3px_rgb(6_99_212/0.18)] focus:outline-none",
   "aria-invalid:border-error aria-invalid:focus:shadow-[0_0_0_3px_rgb(198_40_40/0.15)]",

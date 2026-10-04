@@ -4,9 +4,9 @@ import { cn } from "@/lib/cn";
 
 export function StatBar({ stats, label }: { stats: Stat[]; label: string }) {
   return (
-    <section aria-label={label} className="relative z-10 bg-white">
+    <section aria-label={label} className="relative z-10 bg-canvas">
       <div className="container-site">
-        <dl className="grid grid-cols-2 gap-y-8 border-b border-line py-9 lg:grid-cols-4 lg:py-10">
+        <dl className="grid grid-cols-2 gap-y-10 py-14 lg:grid-cols-4 lg:py-20">
           {stats.map((stat, i) => (
             <div
               key={stat.label}
@@ -18,8 +18,17 @@ export function StatBar({ stats, label }: { stats: Stat[]; label: string }) {
                 i % 2 === 0 && i > 0 && "lg:border-l lg:border-line lg:pl-6",
               )}
             >
-              <dt className="order-2 text-sm leading-snug text-muted">{stat.label}</dt>
-              <dd className="order-1 font-display text-xl font-bold text-ink sm:text-2xl lg:text-[1.7rem]">
+              <dt className="order-2 mt-2 max-w-[16rem] text-sm leading-snug text-muted sm:text-base">
+                {stat.label}
+              </dt>
+              <dd
+                className={cn(
+                  "order-1 font-display leading-none font-medium tracking-[-0.03em] text-ink",
+                  stat.kind === "number"
+                    ? "text-[1.9rem] sm:text-4xl lg:text-[3.25rem]"
+                    : "text-xl sm:text-2xl lg:text-[1.9rem] lg:leading-[1.1]",
+                )}
+              >
                 {stat.kind === "number" ? (
                   <CountUp value={stat.value} suffix={stat.suffix} />
                 ) : (

@@ -20,7 +20,7 @@ export default function InsightsPage() {
       <JsonLd data={breadcrumbLd([{ name: insights.seo.title, path: PATH }])} />
       <PageHero content={hero} compact />
 
-      <section aria-label="Articles" className="bg-white pt-10 pb-14 lg:pt-12 lg:pb-20">
+      <section aria-label="Articles" className="bg-canvas pt-10 pb-14 lg:pt-12 lg:pb-20">
         <div className="container-site">
           <CategoryTabs
             label={filterLabel}
@@ -40,7 +40,7 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      <section aria-labelledby="newsletter-title" className="bg-white pb-16 lg:pb-24">
+      <section aria-labelledby="newsletter-title" className="bg-canvas pb-16 lg:pb-24">
         <div className="container-site">
           <Reveal>
             <div className="flex flex-col gap-6 rounded-band border border-line bg-soft px-6 py-8 sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12">

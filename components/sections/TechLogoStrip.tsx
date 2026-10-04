@@ -10,7 +10,7 @@ export function TechLogoStrip({ logos, label }: { logos: TechLogo[]; label: stri
       {logos.map((logo) => (
         <li
           key={logo.key}
-          className="flex h-20 items-center justify-center rounded-tile border border-line bg-white px-4 text-center shadow-card transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-brand/30"
+          className="flex h-20 items-center justify-center rounded-tile border border-line bg-surface px-4 text-center shadow-card transition-[border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-brand/30"
         >
           {logo.src ? (
             // Plain <img>: vendor SVGs are tiny and need no optimisation.

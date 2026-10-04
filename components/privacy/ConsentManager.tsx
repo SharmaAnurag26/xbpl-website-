@@ -56,7 +56,7 @@ export function ConsentManager() {
           role="region"
           aria-label="Cookie consent"
           tabIndex={-1}
-          className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-xl animate-[rise-in_300ms_var(--ease-out-soft)] rounded-card border border-line bg-white p-5 shadow-[0_20px_50px_-20px_rgb(6_22_46/0.45)] outline-none sm:inset-x-6 sm:bottom-6"
+          className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-xl animate-[rise-in_300ms_var(--ease-out-soft)] rounded-card border border-line bg-surface p-5 shadow-[0_20px_50px_-20px_rgb(6_22_46/0.45)] outline-none sm:inset-x-6 sm:bottom-6"
         >
           <div className="flex gap-3">
             <Cookie aria-hidden className="mt-0.5 size-5 shrink-0 text-brand" />

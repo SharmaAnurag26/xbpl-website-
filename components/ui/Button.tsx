@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 
 export const buttonVariants = cva(
   [
-    "group/btn relative inline-flex shrink-0 items-center justify-center gap-2 rounded-lg font-semibold whitespace-nowrap",
+    "group/btn relative inline-flex shrink-0 items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap",
     "transition-[background,box-shadow,color,border-color,transform] duration-200 ease-out-soft",
     "disabled:pointer-events-none disabled:opacity-60",
   ],
@@ -18,7 +18,7 @@ export const buttonVariants = cva(
           "hover:-translate-y-px hover:shadow-glow hover:[background:var(--gradient-primary-hover)]",
         ],
         outline:
-          "border border-ink/20 bg-white text-ink hover:border-brand-text hover:text-brand-text",
+          "border border-ink/20 bg-surface text-ink hover:border-brand-text hover:text-brand-text",
         "outline-light":
           "border border-white/45 bg-white/5 text-white backdrop-blur-sm hover:border-cyan hover:bg-white/10",
         link: "rounded-sm px-0 text-brand-text hover:text-brand-deep",

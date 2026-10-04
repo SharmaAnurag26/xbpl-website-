@@ -63,7 +63,7 @@ test.describe("mobile navigation", () => {
     await trigger.click();
     const dialog = page.getByRole("dialog", { name: "Main menu" });
     await expect(dialog).toBeVisible();
-    await expect(dialog.getByRole("link", { name: "Cloud" })).toBeVisible();
+    await expect(dialog.getByRole("link", { name: "Cloud Solutions", exact: true })).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(dialog).toBeHidden();
     await expect(trigger).toBeFocused();

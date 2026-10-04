@@ -23,6 +23,14 @@ test.describe("contact form", () => {
     await expect(page.getByLabel("I'm interested in")).toHaveValue("cloud");
   });
 
+  test("course enquiries pre-fill the interest and message", async ({ page }) => {
+    await page.goto("/contact?interest=learning&course=Network%20Security");
+    await expect(page.getByLabel("I'm interested in")).toHaveValue("learning");
+    await expect(page.getByRole("textbox", { name: "Message", exact: true })).toHaveValue(
+      /"Network Security" programme/,
+    );
+  });
+
   test("rejects an invalid email and phone", async ({ page }) => {
     await page.goto("/contact");
     await page.getByLabel("Work Email").fill("not-an-email");

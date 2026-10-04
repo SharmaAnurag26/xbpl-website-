@@ -1,4 +1,7 @@
+import { Sticker3D } from "@/components/genz/Sticker3D";
 import { Reveal } from "@/components/motion/Reveal";
+import { Block } from "@/components/sections/Block";
+import { DetailGrid } from "@/components/sections/DetailGrid";
 import { CTABand } from "@/components/sections/CTABand";
 import { FeatureIconCard } from "@/components/sections/FeatureIconCard";
 import { PageHero } from "@/components/sections/Hero";
@@ -12,14 +15,14 @@ const PATH = "/about";
 export const metadata = buildMetadata({ ...about.seo, path: PATH });
 
 export default function AboutPage() {
-  const { hero, story, purpose, band } = about;
+  const { hero, story, missionVision, values, purpose, band } = about;
 
   return (
     <>
       <JsonLd data={breadcrumbLd([{ name: about.seo.title, path: PATH }])} />
       <PageHero content={hero} />
 
-      <section id="our-story" aria-labelledby="story-title" className="bg-white section-y">
+      <section id="our-story" aria-labelledby="story-title" className="bg-canvas section-y">
         <div className="container-site">
           <Reveal>
             <SectionHeading id="story-title" eyebrow={story.eyebrow} title={story.title} />
@@ -41,7 +44,51 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section aria-labelledby="purpose-title" className="bg-soft py-16 lg:py-20">
+      {/* Mission & vision */}
+      <section
+        aria-label="Mission and vision"
+        className="border-t border-line bg-canvas py-20 lg:py-28"
+      >
+        <div className="container-site grid items-center gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <Sticker3D
+            name="rings"
+            sizes="(min-width: 1024px) 420px, 70vw"
+            className="mx-auto w-4/5 max-w-md"
+          />
+          <div className="grid gap-5">
+            {missionVision.map((item, i) => (
+              <Reveal key={item.title} delay={i * 0.08}>
+                <article
+                  className={
+                    i === 0
+                      ? "rounded-card bg-brand-deep-fill p-7 sm:p-9"
+                      : "rounded-card border border-line bg-surface p-7 sm:p-9"
+                  }
+                >
+                  <h2 className="font-display text-2xl font-medium tracking-[-0.02em] text-white sm:text-3xl">
+                    {item.title}
+                  </h2>
+                  <p
+                    className={
+                      i === 0
+                        ? "mt-3 leading-relaxed text-white/90"
+                        : "mt-3 leading-relaxed text-muted"
+                    }
+                  >
+                    {item.body}
+                  </p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Block id="values" heading={values}>
+        <DetailGrid items={values.items} columns={3} />
+      </Block>
+
+      <section id="our-purpose" aria-labelledby="purpose-title" className="bg-soft py-16 lg:py-20">
         <div className="container-site">
           <Reveal>
             <SectionHeading id="purpose-title" eyebrow={purpose.eyebrow} title={purpose.title} />
@@ -66,7 +113,7 @@ export default function AboutPage() {
       </section>
 
       <Reveal>
-        <CTABand id="performance" {...band} className="pt-10 pb-16 lg:pt-14 lg:pb-24" />
+        <CTABand id="performance" {...band} />
       </Reveal>
     </>
   );

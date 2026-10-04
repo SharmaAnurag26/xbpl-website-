@@ -18,18 +18,14 @@ export default function ContactPage() {
 
       <section aria-labelledby="form-title" className="bg-soft py-14 lg:py-20">
         <div className="container-site grid gap-8 lg:grid-cols-[1.45fr_1fr] lg:gap-10">
-          <div className="rounded-card border border-line bg-white p-6 shadow-card sm:p-8">
+          <div className="rounded-card border border-line bg-surface p-6 shadow-card sm:p-8">
             <h2 id="form-title" className="mb-1 font-display text-xl font-semibold text-ink">
               {contact.form.title}
             </h2>
             <ContactForm content={contact.form} />
           </div>
-          <div className="space-y-8 rounded-card border border-line bg-white p-6 shadow-card sm:p-8">
-            <ContactDetails
-              content={contact.details}
-              contact={site.contact}
-              linkedin={site.social.linkedin}
-            />
+          <div className="space-y-8 rounded-card border border-line bg-surface p-6 shadow-card sm:p-8">
+            <ContactDetails content={contact.details} contact={site.contact} social={site.social} />
             <LocationsMap title={contact.details.locationsTitle} locations={contact.locations} />
           </div>
         </div>

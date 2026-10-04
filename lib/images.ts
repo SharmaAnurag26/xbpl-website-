@@ -164,6 +164,64 @@ export const imageSlots = {
     fallback: { tone: "dark", icon: "rocket" },
   },
 
+  // ---- Learning: audiences & study ------------------------------------
+  "learning/organizations": {
+    width: 1600,
+    height: 1067,
+    subject: "Training room or workshop set up for a corporate session.",
+    fallback: { tone: "dark", icon: "presentation" },
+  },
+  "learning/learners": {
+    width: 1600,
+    height: 1067,
+    subject: "Individual learner studying on a laptop.",
+    fallback: { tone: "dark", icon: "graduation-cap" },
+  },
+  "learning/study": {
+    width: 1600,
+    height: 1067,
+    subject: "Study still life: notebook, pencil, laptop.",
+    fallback: { tone: "dark", icon: "book-open" },
+  },
+
+  // ---- Courses -------------------------------------------------------------
+  "courses/data-science-r": {
+    width: 1200,
+    height: 800,
+    subject: "Code or statistical charts on a screen.",
+    fallback: { tone: "dark", icon: "chart" },
+  },
+  "courses/data-science-python": {
+    width: 1200,
+    height: 800,
+    subject: "Developer writing Python on a laptop.",
+    fallback: { tone: "dark", icon: "code" },
+  },
+  "courses/data-analytics-visualization": {
+    width: 1200,
+    height: 800,
+    subject: "Dashboards or data visualisation on a laptop.",
+    fallback: { tone: "dark", icon: "chart" },
+  },
+  "courses/generative-ai": {
+    width: 1200,
+    height: 800,
+    subject: "Abstract AI / code visual.",
+    fallback: { tone: "dark", icon: "brain" },
+  },
+  "courses/network-security": {
+    width: 1200,
+    height: 800,
+    subject: "Network infrastructure (switches, cables) or abstract network visual.",
+    fallback: { tone: "dark", icon: "network" },
+  },
+  "courses/cyber-security": {
+    width: 1200,
+    height: 800,
+    subject: "Security visual (shield, padlock, SOC screens).",
+    fallback: { tone: "dark", icon: "shield-check" },
+  },
+
   // ---- Contact -----------------------------------------------------------
   "contact/hero": {
     width: 2400,

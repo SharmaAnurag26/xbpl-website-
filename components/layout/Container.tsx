@@ -20,7 +20,7 @@ type SectionProps = ComponentProps<"section"> & {
 export function Section({ tone = "white", className, ...props }: SectionProps) {
   return (
     <section
-      className={cn("section-y", tone === "soft" ? "bg-soft" : "bg-white", className)}
+      className={cn("section-y", tone === "soft" ? "bg-soft" : "bg-canvas", className)}
       {...props}
     />
   );

@@ -13,7 +13,7 @@ type ArticleCardProps = {
 /** Whole card is clickable through the title's stretched link (one tab stop per card). */
 export function ArticleCard({ article, categoryLabel, headingLevel: H = "h3" }: ArticleCardProps) {
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-white shadow-card transition-[transform,box-shadow] duration-300 ease-out-soft hover:-translate-y-1 hover:shadow-card-hover has-[a:focus-visible]:shadow-card-hover">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-card border border-line bg-surface shadow-card transition-[transform,box-shadow] duration-300 ease-out-soft hover:-translate-y-1 hover:shadow-card-hover has-[a:focus-visible]:shadow-card-hover">
       <div className="relative">
         <ImageSlot
           slot={article.cover}

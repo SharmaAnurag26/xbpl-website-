@@ -1,16 +1,16 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import { LinkedInIcon } from "@/components/brand/LinkedInIcon";
+import { SocialLinks } from "@/components/brand/SocialLinks";
 import type { ContactPageContent, SiteContent } from "@/content/types";
 
 type ContactDetailsProps = {
   content: ContactPageContent["details"];
   contact: SiteContent["contact"];
-  linkedin: string;
+  social: SiteContent["social"];
 };
 
 const iconWrap = "grid size-10 shrink-0 place-items-center rounded-tile bg-tile text-brand";
 
-export function ContactDetails({ content, contact, linkedin }: ContactDetailsProps) {
+export function ContactDetails({ content, contact, social }: ContactDetailsProps) {
   return (
     <div>
       <h2 className="font-display text-xl font-semibold text-ink">{content.title}</h2>
@@ -57,15 +57,7 @@ export function ContactDetails({ content, contact, linkedin }: ContactDetailsPro
       </address>
 
       <h3 className="mt-8 text-sm font-semibold text-ink">{content.followTitle}</h3>
-      <a
-        href={linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-3 inline-flex size-10 items-center justify-center rounded-lg bg-navy text-white transition-colors hover:bg-brand-text"
-      >
-        <LinkedInIcon className="size-[18px]" />
-        <span className="sr-only">XBPL on LinkedIn (opens in a new tab)</span>
-      </a>
+      <SocialLinks links={social} className="mt-3" />
     </div>
   );
 }

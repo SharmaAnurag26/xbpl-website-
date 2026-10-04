@@ -17,7 +17,12 @@
     "prebuild": "tsx scripts/gen-image-manifest.ts",
     "predev": "tsx scripts/gen-image-manifest.ts",
     "prepare": "husky",
-    "map": "tsx scripts/gen-world-map.ts"
+    "map": "tsx scripts/gen-world-map.ts",
+    "banner": "tsx scripts/gen-banner.ts",
+    "art": "tsx scripts/gen-art.ts",
+    "render3d": "tsx scripts/render-3d.ts",
+    "photos": "tsx scripts/fetch-photos.ts",
+    "illustrations": "tsx scripts/import-illustrations.ts"
   },
   "packageManager": "pnpm@12.8.1",
   "dependencies": {
@@ -56,6 +61,7 @@
     "@types/node": "^22.20.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
     "@types/topojson-client": "^3.1.5",
     "@types/topojson-specification": "^1.0.5",
     "d3-geo": "^3.1.1",
@@ -67,6 +73,7 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
+    "three": "^0.186.1",
     "topojson-client": "^3.1.0",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",

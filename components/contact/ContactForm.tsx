@@ -40,12 +40,18 @@ export function ContactForm({ content }: ContactFormProps) {
     },
   });
 
-  // Start the fill timer and preselect "I'm interested in" from ?interest=… links.
+  // Start the fill timer, preselect "I'm interested in" from ?interest=… and, for course
+  // enquiries (?course=…), start the message so the visitor only needs to add details.
   useEffect(() => {
     setValue("startedAt", Date.now());
-    const interest = new URLSearchParams(window.location.search).get("interest");
+    const params = new URLSearchParams(window.location.search);
+    const interest = params.get("interest");
     if (interest && content.interests.some((i) => i.value === interest)) {
       setValue("interest", interest);
+    }
+    const course = params.get("course")?.trim().slice(0, 120);
+    if (course) {
+      setValue("message", `I'm interested in the "${course}" programme. `);
     }
   }, [setValue, content.interests]);
 

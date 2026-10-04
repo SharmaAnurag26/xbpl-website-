@@ -4,9 +4,11 @@ import { absoluteUrl } from "@/lib/seo";
 
 const staticRoutes: { path: string; priority: number }[] = [
   { path: "/", priority: 1 },
+  { path: "/courses", priority: 0.9 },
   { path: "/learning", priority: 0.9 },
   { path: "/cloud", priority: 0.9 },
   { path: "/security", priority: 0.9 },
+  { path: "/managed-services", priority: 0.8 },
   { path: "/about", priority: 0.7 },
   { path: "/insights", priority: 0.8 },
   { path: "/contact", priority: 0.8 },

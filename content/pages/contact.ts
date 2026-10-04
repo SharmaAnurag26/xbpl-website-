@@ -22,7 +22,6 @@ export const contact: ContactPageContent = {
   form: {
     title: "Send us a message",
     interestPlaceholder: "Select an option",
-    // TODO: confirm with client (options are not visible in the mockup).
     // `value`s are stable ids used in URLs (/contact?interest=cloud) and emails.
     interests: [
       { value: "learning", label: "Learning & Capability" },
@@ -61,6 +60,5 @@ export const contact: ContactPageContent = {
     locationsTitle: "Explore Our Locations",
   },
 
-  // TODO: confirm with client. The mockup shows several pins; only the listed office is used.
-  locations: [{ name: "Bengaluru, India (Head Office)", lon: 77.59, lat: 12.97 }],
+  locations: [{ name: "Noida, India (Head Office)", lon: 77.36, lat: 28.57 }],
 };

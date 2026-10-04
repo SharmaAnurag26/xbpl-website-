@@ -1,0 +1,34 @@
+{
+  "x-mark": {
+    "width": 1098,
+    "height": 966
+  },
+  "knot": {
+    "width": 510,
+    "height": 528
+  },
+  "blob": {
+    "width": 689,
+    "height": 678
+  },
+  "glass-cube": {
+    "width": 535,
+    "height": 575
+  },
+  "rings": {
+    "width": 663,
+    "height": 479
+  },
+  "shield": {
+    "width": 535,
+    "height": 670
+  },
+  "cloud": {
+    "width": 702,
+    "height": 464
+  },
+  "capsules": {
+    "width": 607,
+    "height": 634
+  }
+}

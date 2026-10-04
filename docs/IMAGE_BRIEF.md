@@ -27,54 +27,68 @@ gradient/glow fallback with the same aspect ratio, so nothing looks broken and t
 
 | File                             | Size (px)   | Subject                                                                                                                                                                                                                                                     | Status      |
 | -------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/home/hero.webp`   | 2400 × 1350 | Lone professional with a backpack standing on a rocky ledge at sunrise, looking over a futuristic city skyline; a glowing blue light trail runs from the foreground into the city. Subject on the right third; left half darker and calm for headline text. | ⏳ fallback |
-| `public/images/home/build.webp`  | 800 × 500   | Diverse team in a modern training room collaborating around a screen; cool blue grading, shallow depth of field.                                                                                                                                            | ⏳ fallback |
-| `public/images/home/evolve.webp` | 800 × 500   | Glowing cloud icon hovering above server racks in a dark data centre; blue/cyan light.                                                                                                                                                                      | ⏳ fallback |
-| `public/images/home/lead.webp`   | 800 × 500   | Digital shield with a padlock in front of a city skyline at dusk; blue holographic style.                                                                                                                                                                   | ⏳ fallback |
-| `public/images/home/band.webp`   | 1600 × 700  | Abstract flowing ribbons of blue and cyan light on deep navy; ribbons concentrated on the right half.                                                                                                                                                       | ⏳ fallback |
-| `public/images/home/cta.webp`    | 1600 × 700  | Earth at night from orbit with glowing network connection arcs between cities; navy/blue palette, globe on the right.                                                                                                                                       | ⏳ fallback |
+| `public/images/home/hero.webp`   | 2400 × 1350 | Lone professional with a backpack standing on a rocky ledge at sunrise, looking over a futuristic city skyline; a glowing blue light trail runs from the foreground into the city. Subject on the right third; left half darker and calm for headline text. | ✅ supplied |
+| `public/images/home/build.webp`  | 800 × 500   | Diverse team in a modern training room collaborating around a screen; cool blue grading, shallow depth of field.                                                                                                                                            | ✅ supplied |
+| `public/images/home/evolve.webp` | 800 × 500   | Glowing cloud icon hovering above server racks in a dark data centre; blue/cyan light.                                                                                                                                                                      | ✅ supplied |
+| `public/images/home/lead.webp`   | 800 × 500   | Digital shield with a padlock in front of a city skyline at dusk; blue holographic style.                                                                                                                                                                   | ✅ supplied |
+| `public/images/home/band.webp`   | 1600 × 700  | Abstract flowing ribbons of blue and cyan light on deep navy; ribbons concentrated on the right half.                                                                                                                                                       | ✅ supplied |
+| `public/images/home/cta.webp`    | 1600 × 700  | Earth at night from orbit with glowing network connection arcs between cities; navy/blue palette, globe on the right.                                                                                                                                       | ✅ supplied |
 
 ### Learning
 
-| File                               | Size (px)   | Subject                                                                                                                    | Status      |
-| ---------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/learning/hero.webp` | 1600 × 1100 | Professional in a dark shirt interacting with a holographic learning interface (icons, panels) in a dark room lit in blue. | ⏳ fallback |
+| File                                        | Size (px)   | Subject                                                                                                                    | Status      |
+| ------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `public/images/learning/hero.webp`          | 1600 × 1100 | Professional in a dark shirt interacting with a holographic learning interface (icons, panels) in a dark room lit in blue. | ✅ supplied |
+| `public/images/learning/organizations.webp` | 1600 × 1067 | Training room or workshop set up for a corporate session.                                                                  | ✅ supplied |
+| `public/images/learning/learners.webp`      | 1600 × 1067 | Individual learner studying on a laptop.                                                                                   | ✅ supplied |
+| `public/images/learning/study.webp`         | 1600 × 1067 | Study still life: notebook, pencil, laptop.                                                                                | ✅ supplied |
 
 ### Cloud
 
 | File                            | Size (px)   | Subject                                                                                                     | Status      |
 | ------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/cloud/hero.webp` | 1600 × 1100 | Large luminous cloud made of light particles above rows of server racks; deep navy with electric blue glow. | ⏳ fallback |
-| `public/images/cloud/cta.webp`  | 1200 × 800  | Data-centre corridor with server racks receding into blue light; right-side focal point.                    | ⏳ fallback |
+| `public/images/cloud/hero.webp` | 1600 × 1100 | Large luminous cloud made of light particles above rows of server racks; deep navy with electric blue glow. | ✅ supplied |
+| `public/images/cloud/cta.webp`  | 1200 × 800  | Data-centre corridor with server racks receding into blue light; right-side focal point.                    | ✅ supplied |
 
 ### Security
 
 | File                               | Size (px)   | Subject                                                                                     | Status      |
 | ---------------------------------- | ----------- | ------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/security/hero.webp` | 1600 × 1100 | Glowing blue shield with a padlock at its centre, surrounded by fine circuit lines on navy. | ⏳ fallback |
-| `public/images/security/cta.webp`  | 1200 × 800  | Professional at a desk facing a large world-map threat dashboard in a dark SOC; blue tones. | ⏳ fallback |
+| `public/images/security/hero.webp` | 1600 × 1100 | Glowing blue shield with a padlock at its centre, surrounded by fine circuit lines on navy. | ✅ supplied |
+| `public/images/security/cta.webp`  | 1200 × 800  | Professional at a desk facing a large world-map threat dashboard in a dark SOC; blue tones. | ✅ supplied |
 
 ### About
 
 | File                            | Size (px)   | Subject                                                                                                                           | Status      |
 | ------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/about/hero.webp` | 1600 × 1100 | Modern glass office tower at dusk, looking up, with blue interior light (XBPL signage only if photographed on the real building). | ⏳ fallback |
-| `public/images/about/band.webp` | 1600 × 700  | Silhouettes of people helping each other climb a mountain ridge at sunrise; warm sun on the right, navy sky.                      | ⏳ fallback |
+| `public/images/about/hero.webp` | 1600 × 1100 | Modern glass office tower at dusk, looking up, with blue interior light (XBPL signage only if photographed on the real building). | ✅ supplied |
+| `public/images/about/band.webp` | 1600 × 700  | Silhouettes of people helping each other climb a mountain ridge at sunrise; warm sun on the right, navy sky.                      | ✅ supplied |
 
 ### Insights
 
 | File                                                                       | Size (px)   | Subject                                                                                                   | Status      |
 | -------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/insights/hero.webp`                                         | 1600 × 1100 | Professional with glasses studying data on multiple screens, blue monitor light on the face; dark office. | ⏳ fallback |
-| `public/images/insights/from-experimentation-to-enterprise-value.webp`     | 1200 × 675  | Stylised glowing AI brain / neural network on navy.                                                       | ⏳ fallback |
-| `public/images/insights/cloud-migration-key-considerations.webp`           | 1200 × 675  | Glowing cloud above a data-centre floor; blue tones.                                                      | ⏳ fallback |
-| `public/images/insights/evolving-threat-landscape.webp`                    | 1200 × 675  | Padlock inside a digital shield with circuit patterns.                                                    | ⏳ fallback |
-| `public/images/insights/building-a-future-ready-technology-workforce.webp` | 1200 × 675  | Small team of professionals discussing around a laptop; modern office, blue grade.                        | ⏳ fallback |
-| `public/images/insights/cloud-and-security-in-digital-transformation.webp` | 1200 × 675  | Cloud and shield icons connected over a server landscape; navy/blue.                                      | ⏳ fallback |
-| `public/images/insights/technology-trends-to-watch.webp`                   | 1200 × 675  | Abstract futuristic cityscape with data streams; cyan highlights.                                         | ⏳ fallback |
+| `public/images/insights/hero.webp`                                         | 1600 × 1100 | Professional with glasses studying data on multiple screens, blue monitor light on the face; dark office. | ✅ supplied |
+| `public/images/insights/from-experimentation-to-enterprise-value.webp`     | 1200 × 675  | Stylised glowing AI brain / neural network on navy.                                                       | ✅ supplied |
+| `public/images/insights/cloud-migration-key-considerations.webp`           | 1200 × 675  | Glowing cloud above a data-centre floor; blue tones.                                                      | ✅ supplied |
+| `public/images/insights/evolving-threat-landscape.webp`                    | 1200 × 675  | Padlock inside a digital shield with circuit patterns.                                                    | ✅ supplied |
+| `public/images/insights/building-a-future-ready-technology-workforce.webp` | 1200 × 675  | Small team of professionals discussing around a laptop; modern office, blue grade.                        | ✅ supplied |
+| `public/images/insights/cloud-and-security-in-digital-transformation.webp` | 1200 × 675  | Cloud and shield icons connected over a server landscape; navy/blue.                                      | ✅ supplied |
+| `public/images/insights/technology-trends-to-watch.webp`                   | 1200 × 675  | Abstract futuristic cityscape with data streams; cyan highlights.                                         | ✅ supplied |
+
+### Courses
+
+| File                                                      | Size (px)  | Subject                                                               | Status      |
+| --------------------------------------------------------- | ---------- | --------------------------------------------------------------------- | ----------- |
+| `public/images/courses/data-science-r.webp`               | 1200 × 800 | Code or statistical charts on a screen.                               | ✅ supplied |
+| `public/images/courses/data-science-python.webp`          | 1200 × 800 | Developer writing Python on a laptop.                                 | ✅ supplied |
+| `public/images/courses/data-analytics-visualization.webp` | 1200 × 800 | Dashboards or data visualisation on a laptop.                         | ✅ supplied |
+| `public/images/courses/generative-ai.webp`                | 1200 × 800 | Abstract AI / code visual.                                            | ✅ supplied |
+| `public/images/courses/network-security.webp`             | 1200 × 800 | Network infrastructure (switches, cables) or abstract network visual. | ✅ supplied |
+| `public/images/courses/cyber-security.webp`               | 1200 × 800 | Security visual (shield, padlock, SOC screens).                       | ✅ supplied |
 
 ### Contact
 
 | File                              | Size (px)  | Subject                                                                                                              | Status      |
 | --------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `public/images/contact/hero.webp` | 2400 × 900 | City skyline at night with long-exposure light trails on a highway leading into it; text-safe dark area on the left. | ⏳ fallback |
+| `public/images/contact/hero.webp` | 2400 × 900 | City skyline at night with long-exposure light trails on a highway leading into it; text-safe dark area on the left. | ✅ supplied |
